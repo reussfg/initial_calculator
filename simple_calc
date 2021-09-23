@@ -1,0 +1,22 @@
+while True:
+    number1 = input('Type a number: ')
+    number2 = input('Type another number: ')
+    if not number1.isnumeric() or not number2.isnumeric():
+        print('You are no typing a number! ')
+        continue
+    operator = input(f'What operation do you want to do?: \n + \n - \n * \n / \n :')
+    number1int = int(number1)
+    number2int = int(number2)
+    if operator == '+':
+        print(f'The result is: {number1int+number2int}')
+    elif operator == '-':
+        print(f'The result is: {number1int-number2int}')
+    elif operator == '*':
+        print(f'The result is: {number1int*number2int}')
+    elif operator == '/':
+        print(f'The result is: {number1int/number2int}')
+    else:
+        print('Invalid operator')
+    out = input(f'Do you want to leave?: \n [Y]/[N] : ?')
+    if out == 'Y':
+         break
